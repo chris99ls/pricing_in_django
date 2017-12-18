@@ -50,6 +50,428 @@
 </head>
 <body data-spy="scroll" data-offset="80">
 
+
+<!-- START PRELOADER -->
+		<div class="preloader">
+			<div class="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+		<!-- END PRELOADER -->
+
+		<!-- START NAVBAR -->
+		<div class="navbar navbar-default navbar-fixed-top menu-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="{% static 'assets/img/logoquiz2.png' %}" alt="logo"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<nav>
+						<ul class="nav navbar-nav navbar-right scrollable-menu">
+							<li><a class="page-scroll" href="#about"><strong>Quizzabo</strong></a></li>
+							<li><a class="page-scroll" href="#service"><strong>Chi gioca</strong></a></li>
+							<!--li><a class="page-scroll" href="#process">process</a></li-->
+							<li><a class="page-scroll" href="#work"><strong>Come</strong></a></li>
+							<li><a class="page-scroll" href="#pricing"><strong>A quanto</strong></a></li>
+							<li><a class="page-scroll" href="#contact"><strong>Contattaci</strong></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div><!--- END CONTAINER -->
+		</div>
+		<!-- END NAVBAR -->
+
+		<!-- START HOME -->
+		<section data-stellar-background-ratio="0.3" id="home" class="home_parallax ripple" style="background-image: url({% static 'assets/img/bg/bgchiaro2.png' %});  background-size:cover; background-position: center center;">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12 text-center">
+					<div class="hero-text">
+						<h1>Quizzabo</h1>
+						<p>Coinvolgi la tua community e promuovi i tuoi contenuti</p>
+					</div>
+					
+				  </div><!--- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END  HOME DESIGN -->
+
+		<!-- START ABOUT -->
+		<section id="about" class="about_me section-padding">
+		   <div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-6 col-xs-12" data-aos="fade-up">
+						<div class="single_about_img">
+							<img src="{% static 'assets/img/man.png' %}" alt="" />
+						</div>
+					</div><!-- END COL -->
+					<div class="col-lg-6 col-sm-6 col-xs-12" data-aos="fade-up">
+						<div class="single_about">
+							<h1>Cos'è Quizzabo </h1>
+							<span></span>
+							<p>Con <strong>Quizzabo</strong> crei <strong>quiz personalizzati</strong> per la tua scuola, la tua agenzia di comunicazione, la tua azienda. Tu ci metti i contenuti, noi la tecnologia. Grazie a <strong>Quizzabo</strong> puoi inserire nel tuo piano marketing giochi divertenti, che aumentano la riconoscibilità del tuo marchio. Con questo strumento puoi inoltre organizzare esercizi di <em>team building</em> in aula, garantendo un’efficace formazione continua alla tua azienda. </p>
+							<p>In sostanza, <strong>Quizzabo</strong> è una piattaforma di <strong>gamification</strong>. Gamification significa apprendimento attraverso il gioco. Rispetto alla formazione frontale, la <em>elearning gamification</em> aumenta l’attenzione dello studente che la usa, trasformandolo in un partecipante attivo dei tuoi corsi. </p>
+						</div>
+					</div><!-- END COL -->
+				</div><!-- END ROW -->
+			</div><!-- END CONTAINER -->
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- START SERVICE -->
+		<section id="service" class="about_us service_bg section-padding">
+		   <div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section-title">
+							<h1>Crea il tuo quiz</h1>
+							<span></span>
+							<p>Noi ci mettiamo la tecnologia, tu i contenuti.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					
+					<div class="col-lg-4 col-sm-4 col-xs-12 " data-aos="fade-up">
+						<div class="serviceBox">
+							<div class="service-icon"><img src="{% static 'assets/img/coin.png' %}"></div>
+							<h3 class="title">Per la tua scuola</h3>
+							<p class="description">Attraveso progetti di gamification come Quizzabo, l'educazione e le materie scolastiche si trasformano in <strong>giochi divertenti</strong>.</p>
+						</div>
+					</div><!-- END COL -->
+					<div class="col-lg-4 col-sm-4 col-xs-12 " data-aos="fade-up">
+						<div class="serviceBox">
+							<div class="service-icon"><img src="{% static 'assets/img/coin.png' %}" width="auto" height="auto"></div>
+							<h3 class="title">Per la tua agenzia</h3>
+							<p class="description">Con Quizzabo la gamification entra nel <strong>piano marketing</strong> dei tuoi clienti, grazie a quiz e <em>giochi multiplayer</em>.</p>
+						</div>
+					</div><!-- END COL -->
+					<div class="col-lg-4 col-sm-4 col-xs-12 " data-aos="fade-up">
+						<div class="serviceBox">
+							<div class="service-icon"><i class="fa fa-building-o"></i></div>
+							<h3 class="title">Per la tua azienda</h3>
+							<p class="description">Costruisci il successo del tuo <em>business</em> con la formazione continua e il <strong>team building</strong> aziendale di Quizzabo.</p>
+						</div>
+					</div><!-- END COL -->
+					<!--div class="col-lg-3 col-sm-6 col-xs-12" data-aos="fade-up">
+						<div class="serviceBox">
+							<div class="service-icon"><i class="fa fa-briefcase"></i></div>
+							<h3 class="title">Branding</h3>
+							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin pharetra tortor.</p>
+						</div>
+					</div><!-- END COL -->
+				</div><!-- END ROW -->
+			</div><!-- END CONTAINER -->
+		</section>
+		<!-- END SERVICE -->
+
+		<!-- START PROMOTION  -->
+		<section data-stellar-background-ratio="0.3" class="promotion_offer" style="background-image: url({% static 'assets/img/bg/cit2.png' %}); background-size:cover; background-position: center center;">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-xs-12" data-aos="fade-up">
+						<div class="promotion_content">
+							<p>Questo è il vero segreto della vita – essere completamente impegnato con quello che si sta facendo qui e ora. E invece di chiamarlo lavoro, rendersi conto che è un gioco.
+(Alan W. Watts)</p>
+							
+						</div>
+					</div><!-- END COL  -->
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</section>
+		<!-- END PROMOTION -->
+
+
+		<!-- START PROJECTS  -->
+		<section id="work" class="our_work section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>Recent projects</h1>
+							<span></span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-xs-12" data-aos="fade-up">
+						<div id="gallery-slider" class="owl-carousel">
+							<div class="single_gallery">
+								<img src="{% static 'assets/img/gallery/1.jpg' %}" class="img-gallery" alt="" />
+								<div class="gallery_overlay"></div>
+								<div class="gallery_info">
+									<h1>project title</h1>
+									<p>project subtitle here</p>
+									<a href="#" data-toggle="modal" data-target="#projectModal">View Project</a>
+								</div>
+							</div><!-- END SINGLE GALLERY -->
+							<div class="single_gallery">
+								<img src="{% static 'assets/img/gallery/2.jpg' %}" class="img-gallery" alt="" />
+								<div class="gallery_overlay"></div>
+								<div class="gallery_info">
+									<h1>project title</h1>
+									<p>project subtitle here</p>
+									<a href="#" data-toggle="modal" data-target="#projectModal2">View Project</a>
+								</div>
+							</div><!-- END SINGLE GALLERY -->
+							<div class="single_gallery">
+								<img src="{% static 'assets/img/gallery/3.jpg' %}" class="img-gallery" alt="" />
+								<div class="gallery_overlay"></div>
+								<div class="gallery_info">
+									<h1>project title</h1>
+									<p>project subtitle here</p>
+									<a href="#" data-toggle="modal" data-target="#projectModal3">View Project</a>
+								</div>
+							</div><!-- END SINGLE GALLERY -->
+							<div class="single_gallery">
+								<img src="{% static 'assets/img/gallery/4.jpg' %}" class="img-gallery" alt="" />
+								<div class="gallery_overlay"></div>
+								<div class="gallery_info">
+									<h1>project title</h1>
+									<p>project subtitle here</p>
+									<a href="#" data-toggle="modal" data-target="#projectModal4">View Project</a>
+								</div>
+							</div><!-- END SINGLE GALLERY -->
+						</div>
+					</div><!-- END COL  -->
+					<div class="col-md-12">
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Project Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="{% static 'assets/img/gallery/1.jpg' %}" class="img-responsive" alt=""/>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor massa sed velit egestas vulputate. Morbi turpis tellus, porta in cursus at, finibus vitae dui. Nam mollis quam a sem iaculis euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac pharetra justo, vel dapibus tortor. Etiam laoreet imperdiet varius.</p>
+										 <ul class="list-unstyled project-list" >
+											<li><label>Client : </label> Wrapbootstrap</li>
+											<li><label>Category :</label> Web Design</li>
+											<li><label>Date : </label> 12 october 2017</li>
+											<li><label>Project Url : </label> <a href="#">www.wrapbootstrap.net</a></li>
+										</ul>
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Project Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="{% static 'assets/img/gallery/2.jpg' %}" class="img-responsive" alt=""/>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor massa sed velit egestas vulputate. Morbi turpis tellus, porta in cursus at, finibus vitae dui. Nam mollis quam a sem iaculis euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac pharetra justo, vel dapibus tortor. Etiam laoreet imperdiet varius.</p>
+										 <ul class="list-unstyled project-list" >
+											<li><label>Client : </label> Wrapbootstrap</li>
+											<li><label>Category :</label> Web Design</li>
+											<li><label>Date : </label> 12 october 2017</li>
+											<li><label>Project Url : </label> <a href="#">www.wrapbootstrap.net</a></li>
+										</ul>
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Project Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="{% static 'assets/img/gallery/3.jpg' %}" class="img-responsive" alt=""/>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor massa sed velit egestas vulputate. Morbi turpis tellus, porta in cursus at, finibus vitae dui. Nam mollis quam a sem iaculis euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac pharetra justo, vel dapibus tortor. Etiam laoreet imperdiet varius.</p>
+										 <ul class="list-unstyled project-list" >
+											<li><label>Client : </label> Wrapbootstrap</li>
+											<li><label>Category :</label> Web Design</li>
+											<li><label>Date : </label> 12 october 2017</li>
+											<li><label>Project Url : </label> <a href="#">www.wrapbootstrap.net</a></li>
+										</ul>
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal4">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Project Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="{% static 'assets/img/gallery/4.jpg' %}" class="img-responsive" alt=""/>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor massa sed velit egestas vulputate. Morbi turpis tellus, porta in cursus at, finibus vitae dui. Nam mollis quam a sem iaculis euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac pharetra justo, vel dapibus tortor. Etiam laoreet imperdiet varius.</p>
+										 <ul class="list-unstyled project-list" >
+											<li><label>Client : </label> Wrapbootstrap</li>
+											<li><label>Category :</label> Web Design</li>
+											<li><label>Date : </label> 12 october 2017</li>
+											<li><label>Project Url : </label> <a href="#">www.wrapbootstrap.net</a></li>
+										</ul>
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+					</div>
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</section>
+		<!-- END PROJECTS -->
+
+		<!-- START PROJECTS -->
+		<section class="recent-projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>Our portfolio</h1>
+							<span></span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<ul class="portfolio-filters text-center">
+						<li class="filter active" data-filter="all">all</li>
+						<li class="filter" data-filter="graphic">Marketing</li>
+						<li class="filter" data-filter="print">seo</li>
+						<li class="filter" data-filter="webdesign">projects</li>
+						<li class="filter" data-filter="social">Social</li>
+					</ul>
+					<!-- END PORTFOLIO FILTER-->
+					<div class="grid">
+						<div class="col-xs-12 col-sm-4 mix print">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/1.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix graphic webdesign">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix print">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/3.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix graphic social">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/4.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix webdesign">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/5.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix social">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/6.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix webdesign">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/7.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix social">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/8.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-4 mix graphic">
+							<div class="box">
+								<img src="{% static 'assets/img/portfolio/9.jpg' %}" alt="">
+								<div class="box-content">
+									<h3 class="title">portfolio title</h3>
+									<span class="post">portfolio sub title</span>
+								</div>
+							</div>
+						</div><!--- END COL -->
+					</div><!--- END GRID -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END PROJECTS -->
+
+		<!-- START NEWSLETTER -->
+		<section  class="newsletter_section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-2 text-center col-xs-12 col-md-8" data-aos="fade-up">
+						<h1 class="newsletter-title">Iscriviti ora alla nostra newsletter</h1>
+						<div class="newsletter_form">
+							<span class="newsletter_form_border"></span>
+							<!-- Replace the form action in the line below with your MailChimp embed action! -->
+							<form action="https://site90.us11.list-manage.com/subscribe/post?u=599a2153f4b86cb2f92d4af3a&amp;id=26d7c26287" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div class="input-group input-group-lg newsletter">
+									<input type="email" name="EMAIL" class="form-control" placeholder="Enter Email">
+									<span class="input-group-btn">
+										<button type="submit" name="subscribe" class="btn-newsletter-bg">Iscriviti ora!</button>
+									</span>
+								</div>
+								<div id="mce-responses">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+							</form>
+						</div>
+					</div><!-- END COL -->
+				</div><!-- END ROW -->
+			</div><!-- END CONTAINER -->
+		</section>
+		<!-- END NEWSLETTER -->
+
+
+
 <!-- START PRICING  -->
 		<section id="pricing" class="our_pricing section-padding" style="background-image: url({% static 'assets/img/bg/lampadinabg.png' %}); background-size:cover; background-position: center center;background-attachment:fixed;">
 			<div class="container">
@@ -92,6 +514,120 @@
 			</div><!-- END CONTAINER  -->
 		</section>
 		<!-- END PRICING -->
+
+
+	<!-- START CONTACT -->
+		<section id="contact" class="contact_us section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>Vuoi saperne di più? Contattaci!</h1>
+							<span></span>
+							<p>Scrivici per informazioni, o per progettare una soluzione personalizzata con noi!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-1 text-center col-xs-12 col-md-10" data-aos="fade-up">
+						<div class="contact">
+							<form id="contact-form" method="post" enctype="multipart/form-data">
+								<div class="row">
+									<div class="form-group col-md-4">
+										<input type="text" name="name" class="form-control" placeholder="Name" required="required">
+									</div>
+									<div class="form-group col-md-4">
+										<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+									</div>
+									<div class="form-group col-md-4">
+										<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+									</div>
+									<div class="col-md-12 text-center">
+										<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!">Invia</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div><!-- END COL  -->
+				</div><!-- END ROW -->
+			</div><!-- END CONTAINER -->
+		</section>
+		<!-- END CONTACT -->
+		<!-- START ADDRESS  -->
+		<section class="contact-address section-padding" style="background-image: url({% static 'assets/img/bg/lampadinabg.png' %}); background-size:cover; background-position: center center;background-attachment:fixed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 text-center col-xs-12 col-md-6">
+						<div class="address">
+							<h2>info@olab-studio.com</h2>
+							<h1>(+39)069806011</h1>
+							<h3>Via XXIV Maggio 28/b 00048 Nettuno(Roma)</h3>
+							<h3><a href="http://www.olab-studio.com/">www.olab-studio.com</a></h3>
+						</div>
+						<div class="footer_social">
+							<ul>
+								<li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="f_youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a class="f_skype" href="#"><i class="fa fa-skype"></i></a></li>
+							</ul>
+						</div>
+						<div class="footer_copyright">
+							<p>&copy; 2017 orange. All Rights Reserved.</p>
+						</div>
+					</div><!-- END COL  -->
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</section>
+		<!-- END ADDRESS -->
+
+		<!-- STYLE SWITCHER -->
+		 <div id="style-switcher">
+			<h2>Your Awesome Color<a href="#"><i class="fa fa-cog fa-spin"></i></a></h2>
+			<div>
+			  <ul class="colors" id="color1">
+				<li><a href="#" class="style1"></a></li>
+				<li><a href="#" class="style2"></a></li>
+				<li><a href="#" class="style3"></a></li>
+				<li><a href="#" class="style4"></a></li>
+				<li><a href="#" class="style5"></a></li>
+				<li><a href="#" class="style6"></a></li>
+				<li><a href="#" class="style7"></a></li>
+				<li><a href="#" class="style8"></a></li>
+			  </ul>
+			</div>
+		 </div>
+		 <!-- END OF STYLE SWITCHER -->
+
+		<!-- Latest jQuery -->
+			<script src="{% static 'assets/js/jquery-1.12.4.min.js' %}"></script>
+		<!-- Latest compiled and minified Bootstrap -->
+			<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+		<!-- modernizer JS -->
+			<script src="{% static 'assets/js/modernizr-2.8.3.min.js' %}"></script>
+		<!-- owl-carousel min js  -->
+			<script src="{% static 'assets/owlcarousel/js/owl.carousel.min.js' %}"></script>
+		<!-- magnific-popup js -->
+			<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- jquery mixitup js -->
+			<script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- stellar js -->
+			<script src="{% static 'assets/js/jquery.stellar.min.js' %}"></script>
+		<!-- scrolltopcontrol js -->
+			<script src="{% static 'assets/js/scrolltopcontrol.js' %}"></script>
+		<!-- aos js -->
+			<script src="{% static 'assets/js/aos.js' %}"></script>
+		<!-- ripples js -->
+			<script src="{% static 'assets/js/ripples-min.js' %}"></script>
+		<!-- switcher js -->
+			<script src="{% static 'assets/js/switcher.js' %}"></script>
+		<!-- scripts js -->
+			<script src="{% static 'assets/js/scripts.js' %}"></script>
 
 
 
