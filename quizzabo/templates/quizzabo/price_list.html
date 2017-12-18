@@ -1,0 +1,99 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pricing</title>
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<!-- SITE TITLE -->
+		<title>Quizzabo</title>
+		<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900" rel="stylesheet" type="text/css">
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css'  %}">
+		<!--- owl carousel Css-->
+		<link rel="stylesheet" href="{% static 'assets/owlcarousel/css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/owlcarousel/css/owl.theme.css' %}">
+		<!-- MAGNIFIC CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+		<!-- component CSS -->
+		<!--link rel="stylesheet" href="{% static 'assets/css/aos.css' %}"-->
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+		<!-- CSS FOR COLOR SWITCHER -->
+		<link rel="stylesheet" href="{% static 'assets/css/switcher/switcher.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/switcher/style2.css' %}" id="colors">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+   				$('.box').matchHeight();
+			});
+		</script>
+
+
+</head>
+<body data-spy="scroll" data-offset="80">
+
+<!-- START PRICING  -->
+		<section id="pricing" class="our_pricing section-padding" style="background-image: url({% static 'assets/img/bg/lampadinabg.png' %}); background-size:cover; background-position: center center;background-attachment:fixed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1 class="section-title-white">Le nostre soluzioni</h1>
+							<span></span>
+							<p class="section-title-white">Fino a cento partite mensili, puoi provarlo gratis! </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+					{% for pricing in all_pricing %}
+
+
+					<div class="col-xs-12 col-sm-3 " data-aos="fade-up">
+						<div class="pricingTable">
+							<span class="icon"><i class="fa fa-globe"></i></span>
+							<div class="pricingTable-header">
+								<h3 class="title">{{ pricing.type}}</h3>
+								<span class="price-value">{{ pricing.price }}</span>
+							</div>
+								<ul class="pricing-content">
+					        		
+						        	{% for item in pricing.item_set.all%}
+						        		<li>{{item.description}}</li>
+
+						        	{% endfor%}
+								</ul>
+							<div id="footer">
+							<a href='' class="btn btn-lg btn-contact-bg">Acquista</a>
+							</div>
+						</div>
+					</div><!-- END COL  -->
+
+					{% endfor %}
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</section>
+		<!-- END PRICING -->
+
+
+
+</body>
+</html>

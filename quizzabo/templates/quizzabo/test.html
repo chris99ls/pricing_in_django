@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pricing</title>
+
+</head>
+<body >
+
+
+					{% for pricing in all_pricing %}
+
+								<h3 class="title">{{ pricing.type}}</h3>
+								<span class="price-value">{{ pricing.price }}</span>
+							</div>
+								<ul >
+					        	
+						        	{% for item in pricing.item_set.all%}
+						        		<li>{{item.description}}</li>
+
+						        	{% endfor%}
+							</ul>
+						</div>
+
+					{% endfor %}
+
+
+</body>
+</html>
